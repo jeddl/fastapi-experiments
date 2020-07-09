@@ -4,7 +4,7 @@ from fastapi import FastAPI
 def app_init():
     app = FastAPI()
 
-    @app.get("/")
+    @app.get("/foo")
     def foo():
         return {"Hello": "World"}
 
